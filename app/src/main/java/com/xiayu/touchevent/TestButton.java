@@ -10,7 +10,7 @@ import android.view.MotionEvent;
  */
 
 public class TestButton extends android.support.v7.widget.AppCompatButton {
-    private final static String tag = "yan";
+    private final static String tag = "TestButton";
     public TestButton(Context context, AttributeSet attrs) {
         super(context, attrs);
         // TODO Auto-generated constructor stub

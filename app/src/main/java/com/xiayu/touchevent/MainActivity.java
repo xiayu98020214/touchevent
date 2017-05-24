@@ -43,6 +43,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        TestLinearLayout testLinelayout = (TestLinearLayout)findViewById(R.id.linearlayout_test);
+        testLinelayout.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                // TODO Auto-generated method stub
+                switch(event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        Log.i(TAG, "testLinelayout-onTouch-ACTION_DOWN...");
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        Log.i(TAG, "testLinelayout-onTouch-ACTION_UP...");
+                        break;
+                    default:break;
+
+                }
+                return false;
+            }
+        });
+
+        testLinelayout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Log.i(TAG, "testLinelayout---onClick...");
+            }
+        });
+
     }
 
 

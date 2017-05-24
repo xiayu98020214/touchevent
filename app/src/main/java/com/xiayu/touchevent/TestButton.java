@@ -27,7 +27,10 @@ public class TestButton extends android.support.v7.widget.AppCompatButton {
                 break;
             default:break;
         }
-        return super.onTouchEvent(event);
+
+        boolean flag = super.onTouchEvent(event);//最底层的view，肯定返回true。
+        Log.i(tag,"flag;"+flag);
+        return flag;
     }
 
     @Override

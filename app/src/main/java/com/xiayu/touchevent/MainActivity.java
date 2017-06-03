@@ -80,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
         // TODO Auto-generated method stub
         switch(ev.getAction()){
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "MainActivity-dispatchTouchEvent-ACTION_DOWN...");
+                Log.i(TAG, "MainActivity-dispatchTouchEvent-ACTION_DOWN..." + ev.getAction());
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "MainActivity-dispatchTouchEvent-ACTION_UP...");
+                Log.i(TAG, "MainActivity-dispatchTouchEvent-ACTION_UP..."+ ev.getAction());
                 break;
             default:break;
         }
@@ -95,10 +95,10 @@ public class MainActivity extends AppCompatActivity {
         // TODO Auto-generated method stub
         switch(event.getAction()){
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG, "MainActivity-onTouchEvent-ACTION_DOWN...");
+                Log.i(TAG, "MainActivity-onTouchEvent-ACTION_DOWN..."+ event.getAction());
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG, "MainActivity-onTouchEvent-ACTION_UP...");
+                Log.i(TAG, "MainActivity-onTouchEvent-ACTION_UP..."+ event.getAction());
                 break;
             default:break;
         }

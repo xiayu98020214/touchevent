@@ -24,13 +24,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />-->
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xiayu.touchevent.ViewA
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark">
+
+        <com.xiayu.touchevent.ViewB
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FF4081"/>
+
+    </com.xiayu.touchevent.ViewA>
 
 
     <com.xiayu.touchevent.TestLinearLayout
         android:id="@+id/linearlayout_test"
         android:background="#e5e5e5"
-        android:layout_width="200dip"
-        android:layout_height="200dip" >
+        android:layout_width="100dip"
+        android:layout_height="100dip" >
 
         <com.xiayu.touchevent.TestButton
             android:id="@+id/testbutton"
@@ -38,5 +54,21 @@
             android:layout_height="wrap_content"
             android:text="测试按钮" />
     </com.xiayu.touchevent.TestLinearLayout>
+
+    <com.xiayu.touchevent.ViewA
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark">
+
+        <com.xiayu.touchevent.ViewB
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FF4081"/>
+
+    </com.xiayu.touchevent.ViewA>
+
+
+
+</LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

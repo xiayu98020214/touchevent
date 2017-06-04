@@ -59,7 +59,12 @@ public class ViewB extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        setMeasuredDimension(widthMeasureSpec,heightMeasureSpec);
+       // setMeasuredDimension(100| MeasureSpec.EXACTLY,100| MeasureSpec.EXACTLY);
+
+        Log.d(TAG, "onMeasure: width:"+MeasureSpec.getSize(widthMeasureSpec)+
+                "  hight:"+MeasureSpec.getSize(heightMeasureSpec));
+        setMeasuredDimension(MeasureSpec.getSize(widthMeasureSpec),MeasureSpec.getSize(heightMeasureSpec));
+        //setMeasuredDimension(50,50);
     }
 
 

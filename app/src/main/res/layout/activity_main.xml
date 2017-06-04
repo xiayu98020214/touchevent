@@ -25,48 +25,83 @@
         android:layout_height="wrap_content" />-->
 
 <LinearLayout
+    android:layout_width="368dp"
+    android:layout_height="495dp"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="8dp"
+    tools:layout_editor_absoluteX="8dp">
+
+ <!--   <com.xiayu.touchevent.ViewA
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFC0CB">
+
+        <com.xiayu.touchevent.ViewB
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#4B0082"/>
+
+    </com.xiayu.touchevent.ViewA>-->
+
+    <View
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_marginLeft="20px"
+        android:background="#4B0082"
+        ></View>
+
+
+
+
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="66px"
+        android:layout_height="66px"
+        android:background="#c55"
+        ></View>
     <com.xiayu.touchevent.ViewA
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@color/colorPrimaryDark">
 
         <com.xiayu.touchevent.ViewB
+            android:id="@+id/green"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="#FF4081"/>
+            android:background="#e5e5"/>
 
     </com.xiayu.touchevent.ViewA>
+</LinearLayout>
 
 
-    <com.xiayu.touchevent.TestLinearLayout
-        android:id="@+id/linearlayout_test"
-        android:background="#e5e5e5"
-        android:layout_width="100dip"
-        android:layout_height="100dip" >
+        <com.xiayu.touchevent.TestLinearLayout
+            android:id="@+id/linearlayout_test"
+            android:background="#e5e5e5"
+            android:layout_width="100dip"
+            android:layout_height="100dip" >
 
-        <com.xiayu.touchevent.TestButton
-            android:id="@+id/testbutton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="测试按钮" />
-    </com.xiayu.touchevent.TestLinearLayout>
+            <com.xiayu.touchevent.TestButton
+                android:id="@+id/testbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试按钮" />
+        </com.xiayu.touchevent.TestLinearLayout>
 
-    <com.xiayu.touchevent.ViewA
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@color/colorPrimaryDark">
+<!--    <com.xiayu.touchevent.ViewA
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#FFC0CB">
 
         <com.xiayu.touchevent.ViewB
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#FF4081"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#c55"/>
 
-    </com.xiayu.touchevent.ViewA>
-
+    </com.xiayu.touchevent.ViewA>-->
 
 
 </LinearLayout>

@@ -70,8 +70,8 @@
 
         <com.xiayu.touchevent.ViewB
             android:id="@+id/green"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:background="#e5e5"/>
 
     </com.xiayu.touchevent.ViewA>

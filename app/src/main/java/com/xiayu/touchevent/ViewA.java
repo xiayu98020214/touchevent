@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.BounceInterpolator;
 import android.view.animation.Interpolator;
 
 /**
@@ -112,7 +111,7 @@ public class ViewA extends ViewGroup {
         mHeight = h;
         mChild = getChildAt(0);
         int width = w - mChild.getMeasuredWidth();
-        startAnimator(new BounceInterpolator(),width);
+       // startAnimator(new BounceInterpolator(),width);
 
     }
 
